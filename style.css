@@ -14,7 +14,6 @@ body {
 #title {
   color: white;
   text-align: center;
-  padding-top: 20px;
   font-size: 45px;
   margin: 0;
 }
@@ -30,6 +29,7 @@ body {
   width: 100%;
   padding: 20px;
   border-radius: 10px;
+  box-sizing: border-box;
 }
 
 #survey-form {
@@ -161,4 +161,27 @@ button:hover:before, button:focus:before{
   left: 0;
   right: 0;
   opacity: 1;
+}
+
+@media screen and (max-width: 480px) {
+  #container {
+    max-width:600px;
+    margin: 0 auto 0 auto;
+  }
+  #title{
+    font-size: 35px;
+  }  
+}
+
+@media screen and (max-width: 410px){
+  .gender{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 356px){
+  .social-age{
+    flex-direction: column;
+  }
 }
