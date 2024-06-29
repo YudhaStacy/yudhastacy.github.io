@@ -1,0 +1,98 @@
+<DOCTYPE! html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Project survey form</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+      <main>
+        <div id="container">
+          <header>
+            <h1 id="title">SURVEY SOSIAL MEDIA</h1>
+            <p id="description">Survey kenyamanan terhadap beberapa sosial media dari remaja 18 tahun keatas</p>
+          </header>
+          <form id="survey-form">
+            <div class="form-input">
+              <label for="name" id="name-label">Nama</label><br>
+              <input id="name" type="text" name="name" placeholder="Massukkan nama" required><br>
+            </div>
+            
+            <div class="form-input">
+              <label for="email" id="email-label">Email</label><br>
+              <input id="email" type="email" name="email" placeholder="Masukkan email" required><br>
+            </div>
+            
+            <div class="social-age">
+              <div class="umur">
+                <div class="form-input">
+                  <label for="age" id="number-label">Umur</label><br>
+                  <input id="number" type="number" min="18" max="70" name="age" placeholder="Umur" required><br>
+                </div>
+              </div>
+
+              <div class="social-media">
+                <label for="dropdown">Sosial Media</label>
+                <select name="dropdown" id="dropdown">
+                  <option disabled selected hidden>Pilih Sosial Media</option>
+                  <option value="fb">Facebook</option>
+                  <option value="ig">Instagram</option>
+                  <option value="tiktok">Tik Tok</option>
+                  <option value="x">X</option>
+                  <option value="youtube">Youtube</option>
+                  <option value="thread">Thread</option>
+                  <option value="reddit">Reddit</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-radio">
+              <p>Jenis Kelamin</p>
+              <div class="gender">
+                <div class="gender-male">
+                  <input type="radio" name="male-female" id="male" value="male" checked>
+                  <label for="male">Laki Laki</label>
+                </div>
+                <div class="gender-female">
+                  <input type="radio" name="male-female" id="female" value="female">
+                  <label for="female">Perempuan</label>
+                </div>
+            </div>
+            </div>
+            <div class="check">
+              <p>Apa yang kamu sukai dari aplikasi sosial media tersebut :</p>
+              <div class="group">
+                <input type="checkbox" name="rating" id="ui" value="ui">
+                <label for="ui" class="label-checkbox">Tampilan UI</label>
+              </div>
+              <div class="group">
+                <input type="checkbox" name="rating" id="fitur" value="fitur">
+                <label for="fitur" class="label-checkbox">Fitur</label>
+              </div>
+              <div class="group">
+                <input type="checkbox" name="rating" id="layanan" value="layanan">
+                <label for="layanan" class="label-checkbox">Layanan sosial media</label>
+              </div>
+              <div class="group">
+                <input type="checkbox" name="rating" id="akses" value="akses">
+                <label for="akses" class="label-checkbox">Kemudahan mengakses</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <p>Kritik dan Saran</p>
+              <textarea
+                name="saran" id="saran" placeholder="Kritik dan saran dari anda" required></textarea>
+            </div>
+            <br>
+            <div class="submit-button">
+              <button id="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </main>
+    </body>
+  </html>
+</DOCTYPE!>
