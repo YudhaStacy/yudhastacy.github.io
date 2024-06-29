@@ -162,7 +162,3 @@ button:hover:before, button:focus:before{
   right: 0;
   opacity: 1;
 }
-
-button :active{
-  transform: scale(0.9);
-}
