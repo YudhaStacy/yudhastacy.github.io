@@ -22,17 +22,7 @@ body {
 #description {
   color: white;
   text-align: center;
-  font-style: italic;
   margin-top: 0;
-}
-
-header{
-    background-color: transparent;
-    backdrop-filter: blur(20px);
-    border: 2px solid rgba(255, 255, 255, 0.311);
-    padding: 20px;
-    margin-bottom: 10px;
-    border-radius:10px;
 }
 
 #container {
@@ -59,10 +49,18 @@ header{
   margin-bottom: 20px;
   font-size: 15px;
   background-color: #fafafa;
+  transition: background-color 0.5s;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 #dropdown{
   color: #7c7c7c;
+  border-right: 10px solid transparent;
 }
 
 .form-input input::placeholder, textarea::placeholder{
@@ -70,8 +68,7 @@ header{
 }
 
 .form-input input:hover, #dropdown:hover, #saran:hover{
-  box-shadow: 1 1 2px #00b7ff;
-  
+  background-color: rgba(49, 197, 255, 0.058);
 }
 
 .form-input input:focus, #dropdown:focus, #saran:focus{
@@ -155,10 +152,6 @@ button::before{
   z-index: -1;
 }
 
-.submit-button{
-  
-}
-
 button:hover , button:focus{
   color: white;
 }
@@ -168,7 +161,6 @@ button:hover:before, button:focus:before{
   left: 0;
   right: 0;
   opacity: 1;
-
 }
 
 button :active{
